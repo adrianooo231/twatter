@@ -6,9 +6,9 @@ Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
   :port           => ENV['MAILGUN_SMTP_PORT'],
-  :address        => ENV['MAILGUN_SMTP_SERVER'],
-  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  :address        => ENV['104.130.122.3'],
+  :user_name      => ENV['postmaster@powerful-brushlands-50172.herokuapp.com'],
+  :password       => ENV['acac7c229195f2cbbba387fafc7bf89b'],
   :domain         => 'powerful-brushlands-50172.herokuapp.com',
   :authentication => :plain,
 }
