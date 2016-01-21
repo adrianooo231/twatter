@@ -16,5 +16,22 @@
             <h3> Now Wheelchair Accessible</h3>
             <i class="fa fa-wheelchair fa-5x"></i>
         </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class= 'well text-center'>
+                    <h1><small>Basic Membership</small></h1> 
+                    <p>Sign up to get basic access to the community</p>
+                    <%= link_to 'I aint paying', new_user_registration_path(plan: @basic_plan.id), class: 'btn-primary btn-lg btn-block' %>
+                    
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class= 'well text-center'>
+                    <h1>Pro Membersip</h1>
+                    <h4>Pro access for only 5£/month</h4>
+                    <%= link_to 'Deal! Sign me up', new_user_registration_path, class: 'btn-success btn-lg btn-block' %>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
