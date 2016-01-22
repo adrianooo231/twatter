@@ -29,7 +29,7 @@
                 <div class= 'well text-center'>
                     <h1>Pro Membersip</h1>
                     <h4>Pro access for only 5£/month</h4>
-                    <%= link_to 'Deal! Sign me up', new_user_registration_path, class: 'btn-success btn-lg btn-block' %>
+                    <%= link_to 'Deal! Sign me up', new_user_registration_path(plan: @pro_plan.id), class: 'btn-success btn-lg btn-block' %>
                 </div>
             </div>
         </div>
